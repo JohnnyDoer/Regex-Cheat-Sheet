@@ -23,3 +23,29 @@ myRegex = /dog|cat|fish|bird/       // Either dog or cat or fish or bird.
 result = myRegex.test(myString)
 
 console.log(myString + '\n' + myRegex + '\n' + result + '\n')
+
+
+
+// Case insensitive match.
+myString = "freeCodeCamp"
+myRegex = /freecodecamp/i
+result = myRegex.test(myString)
+
+console.log(myString + '\n' + myRegex + '\n' + result + '\n')
+
+
+
+// Extract the regex pattern. (Gives only first match)
+myString = "Extract the word 'CODING' from this string."
+myRegex = /coding/i
+result = myString.match(myRegex)
+
+console.log(myString + '\n' + myRegex + '\n' + result + '\n')
+
+
+// Extract all the patterns.
+myString = "Repeat, repeat, repeat."
+myRegex = /repeat/ig
+result = myString.match(myRegex)
+
+console.log(myString + '\n' + myRegex + '\n' + result + '\n')
